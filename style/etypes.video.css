@@ -1,0 +1,42 @@
+.video-wrapper{
+  position: relative;
+	width: 406px;
+}
+.dark-controls .video-controls{				
+		color: #000000 !important;
+}
+.video-player{}
+.video-controls{
+	color: #ffffff;
+	font-family: 'Verdana', 'Arial', sans-serif;
+	font-size: 12px;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
+  .btn-play{
+    background: url(../images/play_w.png);
+	  cursor: pointer;
+  	height: 33px;
+  	margin: 0 0 0 20px;
+  	width: 33px;
+  }
+    .dark-controls .btn-play{
+      background: url(../images/play_b.png) !important;
+    }
+  .btn-pause{
+  	background: url(../images/pause_w.png);
+	  cursor: pointer;
+    display: none;
+    height: 33px;
+    margin: 0 0 0 20px;
+    width: 33px;
+    }
+    .dark-controls .btn-pause{
+      background: url(../images/pause_b.png) !important;
+    }
+  .elapsed-time{
+    bottom: 5px;
+    position: absolute;
+    right: 20px;
+  }

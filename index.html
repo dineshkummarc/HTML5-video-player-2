@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>e-Types HTML 5 video player</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link type="text/css" rel="stylesheet" href="style/etypes.video.css" />
+	<style type="text/css">
+		body{
+			background: #cdcdcd;
+		}
+		#video-1{
+			left: 100px;
+			position: absolute;
+			top: 100px;
+		}
+		#video-2{
+			left: 700px;
+			position: absolute;
+			top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="video-1" class="video-wrapper">
+		<video class="video-player" width="406" height="226" preload="meta" controls>
+			<source type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' src="http://giveaway.e-types.com/td2f.mp4"></source>
+			   <source type='video/ogg; codecs="theora, vorbis"' src="http://giveaway.e-types.com/td2f.ogv"></source>	
+			<!-- Fallback content -->
+		</video>
+		<div class="video-controls">
+			<div class="btn-play"></div>
+			<div class="btn-pause"></div>
+			<div class="elapsed-time"></div>
+		</div>
+	</div>
+	
+	<div id="video-2" class="video-wrapper">
+		<video class="video-player" width="406" height="226" preload="meta" controls>
+			<source type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' src="http://giveaway.e-types.com/td2f.mp4"></source>
+			   <source type='video/ogg; codecs="theora, vorbis"' src="http://giveaway.e-types.com/td2f.ogv"></source>	
+			<!-- Fallback content -->
+		</video>
+		<div class="video-controls">
+			<div class="btn-play"></div>
+			<div class="btn-pause"></div>
+			<div class="elapsed-time"></div>
+		</div>
+	</div>
+	
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+	<script src="js/jquery_1.4.4.min.js"></script>
+	<script src="js/etypes.video.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#video-1').videoPlayer(); //Default theme - white ; Default sound - 0
+		$('#video-2').videoPlayer({dark:true, volume:1});				
+	});	
+	</script>  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
